@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+
+@theme {    
+    --color-brown-100: #ece0d1;
+    --color-brown-300: #dbc1ac;
+    --color-brown-600: #967259;
+    --color-brown-900: #634832;
+    
+    --shadow-lite: 0px 1px 10px rgba(0, 0, 0, 0.05);
+    
+    --radius-4xl: 2rem;
+    
+    --breakpoint-xs: 480px;
+  }
+  
+  @utility container {
+    @apply mx-auto px-4 lg:px-2.5;
+  }
+  
+  @custom-variant dark (&:where(.dark, .dark *));
+  
+  @import "vazirmatn/Vazirmatn-font-face.css";
+  body {
+    direction: rtl;
+    font-family: "Vazirmatn", sans-serif;
+    font-display: swap;
+  } 
+  
+  /* @layer utilities {
+    .bg-home-mobile {
+      background-image: url();
+      }
+      } */
+      
